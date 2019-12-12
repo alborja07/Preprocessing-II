@@ -1,0 +1,20 @@
+nav {
+  padding: 3%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  border-bottom: 2px dashed #c0c0c0;
+  justify-content: flex-end;
+}
+nav a {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.8rem;
+  text-decoration: none;
+  width: 10%;
+  text-align: center;
+}
+nav .funbus {
+  width: 60%;
+}
