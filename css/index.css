@@ -169,7 +169,6 @@ img {
   margin: 0 auto;
 }
 nav {
-  margin: 2%;
   padding: 3%;
   display: flex;
   flex-wrap: wrap;
@@ -197,6 +196,16 @@ nav .funbus {
   color: #212529;
   font-size: 1.6rem;
   padding: 20px;
+}
+header {
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 2px dashed #C0C0C0;
+  margin: 0 10%;
+  padding-bottom: 1%;
+}
+header img {
+  padding-bottom: 2%;
 }
 .home .content-section {
   margin: 30px 0;
