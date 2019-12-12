@@ -168,6 +168,25 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+nav {
+  margin: 2%;
+  padding: 3%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 90%;
+  border-bottom: 2px dashed #C0C0C0;
+  justify-content: flex-end;
+}
+nav a {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.8rem;
+  text-decoration: none;
+  width: 10%;
+}
+nav .funbus {
+  width: 60%;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
