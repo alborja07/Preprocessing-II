@@ -1,1 +1,18 @@
 // Mixins in here
+
+.btn-styles () {
+    display: block;
+    background-color: @button-bg;
+    width: 200px;
+    font-size: 2rem;
+    color: @main-bg;
+    border-radius: 10px;
+    height: 45px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.btn {
+    .btn-styles();
+}
