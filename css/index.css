@@ -1,9 +1,9 @@
 .btn {
   display: block;
-  background-color: #17A2B8;
+  background-color: #17a2b8;
   width: 200px;
   font-size: 2rem;
-  color: #FFFFFF;
+  color: #ffffff;
   border-radius: 10px;
   height: 45px;
   display: flex;
@@ -186,16 +186,16 @@ nav {
   flex-wrap: wrap;
   align-items: center;
   align-content: center;
-  width: 90%;
-  border-bottom: 2px dashed #C0C0C0;
+  width: 100%;
+  border-bottom: 2px dashed #c0c0c0;
   justify-content: flex-end;
-  margin-left: 5%;
 }
 nav a {
   font-family: 'Roboto', sans-serif;
   font-size: 1.8rem;
   text-decoration: none;
   width: 10%;
+  text-align: center;
 }
 nav .funbus {
   width: 60%;
@@ -203,7 +203,7 @@ nav .funbus {
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
-  background: #FFEBCD;
+  background: #ffebcd;
 }
 .footer p {
   text-align: center;
@@ -211,10 +211,24 @@ nav .funbus {
   font-size: 1.6rem;
   padding: 20px;
 }
+@media (max-width: 500px) {
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  nav .funbus {
+    flex-basis: 100%;
+    text-align: center;
+  }
+  nav a {
+    width: unset;
+  }
+}
 header {
   display: flex;
   flex-wrap: wrap;
-  border-bottom: 2px dashed #C0C0C0;
+  border-bottom: 2px dashed #c0c0c0;
   margin: 0 10%;
   padding-bottom: 1%;
 }
@@ -224,6 +238,11 @@ header img {
 }
 header .welcome {
   width: 100%;
+}
+@media (max-width: 500px) {
+  header {
+    margin: 0 5%;
+  }
 }
 .home .content-section {
   margin: 30px 0;
@@ -242,9 +261,24 @@ header .welcome {
 .home .content-section .img-content img {
   border-radius: 10px;
 }
+@media (max-width: 500px) {
+  .home .content-section {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+  }
+  .home .content-section .text-content {
+    width: 90%;
+  }
+  .home .content-section .img-content {
+    order: 2;
+    width: 90%;
+  }
+}
 .home .inverse-content {
   padding-bottom: 30px;
-  border-bottom: 2px dashed #C0C0C0;
+  border-bottom: 2px dashed #c0c0c0;
 }
 .home .inverse-content .text-content {
   padding-left: 1%;
@@ -263,11 +297,24 @@ header .welcome {
 }
 .home .content-pick {
   padding-top: 30px;
-  border-top: 2px dashed #C0C0C0;
+  border-top: 2px dashed #c0c0c0;
   display: flex;
   justify-content: space-between;
 }
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+@media (max-width: 500px) {
+  .home .content-pick {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .home .content-pick .destination {
+    width: 90%;
+  }
+  .home .content-pick .btn {
+    width: 90%;
+  }
 }
